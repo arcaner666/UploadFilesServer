@@ -64,8 +64,8 @@ namespace UploadFilesServer
             app.UseStaticFiles();
             app.UseStaticFiles(new StaticFileOptions()
             {
-                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"StaticFiles")),
-                RequestPath = new PathString("/StaticFiles")
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"Resources/Images")),
+                RequestPath = new PathString("/Resources/Images")
             });
 
             app.UseRouting();
